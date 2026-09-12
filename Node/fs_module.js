@@ -1,3 +1,9 @@
 let fs=require('fs')
-const create_file=fs.c()
-console.log(create_file)        
+fs.readFile('demo.txt','utf-8',(err,data)=>{
+    if(err){
+        console.log(err)
+    }
+    else{
+        console.log(data)
+    }
+})  

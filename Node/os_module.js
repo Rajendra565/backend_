@@ -1,3 +1,5 @@
 let os=require('os')
 let user=os.userInfo()
+let upto=os.uptime()
+console.log(process.uptime())
 console.log(user.username)
